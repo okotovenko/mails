@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 103 18" width="103" height="18">
+	<title>stars5</title>
+	<defs>
+		<image  width="103" height="18" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGcAAAASCAMAAABxcDC5AAAAAXNSR0IB2cksfwAAAapQTFRFAAAA+PNn///d+fNu///V//wA///G//9B++9u//sO/+8A//kA/PFw///b/+4A//AA///Y/vF2//QL/+kA/+sA//QA/vJ4//Bv//J2//SB/vmv//7o/+QA/+oA/+UA//7k/fiq//Z+//Ny//Vi+fXS//73//7z//7o///Y//q6/+cA/+AA/+MA//y+///d//7q//7z+/fU16QA99AA/9cA/9YA/9oA/90A/98A/9wA+tkA1qUL7MQAz5AA98YA/+gA+ccA7MMA7L8Az5AA9L0A/+EA/9gA9sEA8MAAzo8A/ccA/9MA/9AAzo4A7boA78AA/LkA/80A/84A+rYA67sA/8dJ/8QA/8cA/8oA/sMA/6tL9NBR/8MA/8AA/8MA/8UA/8gA/8kA/78A/8cA9s9S89BW/7AA/74A/8sA+7gA6acA/LsA/70A/7MA9M5U896b/LYA2ZEAzpEA2qMAzpAA25IA/bkA/8YA/68A89mK8Nqa+qEA25EAzo0A5rAA8bAA6rIA5K8Azo4A35UA/KYA8NmU48Ff0ZIA5rYa7KsA6q4A47ARz48A5cZt8ih+VQAAAI50Uk5TAEj9WPv//ANn////dPv///tn/////24gR22z/f////2pYzoV9P3+/////////////Of8///////////9Jv3///8yJ/z/////IPz////8KCz9///9MAn8///7A0D+/////////jR1//////////9svf///ef9/////6rw///9qBAXt/7//+H1/bkYIs397A3IPLsAAAEISURBVHicY2CAAkYmZgYMQANBFlY2djoIcnBycfOgq6OBIC8fP58AukLqCwoKCYsIi4rRVFBcQlJKWkZWRFZOXkFRSZlGgiqqauoamlraOjo62lq6evpqBoY0ETQy1jIxNTO30NbWtrA0MzUTtrJmoIWgja2dsLY5DFjYO9g6MtBE0MnZxdXNBALcXN1BQrQR9PD08vaBAG8vXz9IRNJC0D8gEAqCgkNgqZAGgqFh4REQEB4ZxUA7weiY2Lj4hMSE+Lik5BQG2gmmpqXHZ2RmZWfE5+TmMdBOMD8toaCwqLiktKy8opKBdoJV1TW1dfUMDY1NzS2tDLQTbGvv6AQzurp7ehloIwgAF+0cysbyuqUAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>

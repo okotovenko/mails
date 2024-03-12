@@ -1,0 +1,582 @@
+<?php
+ignore_user_abort(true); error_reporting(0);
+include './meldonium/config.php';
+$config = getConfig();
+$page = 'index';
+?>
+
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=480">
+	<meta name="keywodrs" content="Кухонный набор Benson">
+	<title>Кухонні прилади Benson</title>
+	<link rel="shortcut icon" href="images/favicon.png" type="image/png">
+	<link rel="stylesheet"
+		href="css/A.push.css%2BProximaStara.css%2BBratello.css%2Bfontss.css%2Bslicka.css%2CMcc.uufJf_anGJ.css.pagespeed.cf.cXuJgwCR1x.css"
+		type="text/css">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="js/slider.js"></script>
+
+
+	<link rel="stylesheet" href="css/options.css" type="text/css">
+	<link rel="stylesheet" href="css/A.nastyle.css.pagespeed.cf.VQqMZ6NF5h.css" type="text/css">
+	<link rel="stylesheet" href="css/slider.css" type="text/css">
+
+
+
+	<style>
+		.menulog {
+			display: none
+		}
+
+		.menu {
+			text-align: center;
+			padding: 8px 0;
+			background: #ececec
+		}
+
+		.menu__links-item img {
+			vertical-align: middle
+		}
+
+		.menu__icon {
+			display: none;
+			width: 45px;
+			height: 35px;
+			position: relative;
+			cursor: pointer
+		}
+
+		.menu__icon span {
+			display: block;
+			position: absolute;
+			height: 5px;
+			width: 100%;
+			background: #333;
+			border-radius: 9px;
+			opacity: 1;
+			left: 0;
+			transform: rotate(0deg);
+			transition: .25s ease-in-out
+		}
+
+		.menu__icon span:nth-child(1) {
+			top: 0
+		}
+
+		.menu__icon span:nth-child(2),
+		.menu__icon span:nth-child(3) {
+			top: 13px
+		}
+
+		.menu__icon span:nth-child(4) {
+			top: 26px
+		}
+
+		.menu__links-item {
+			display: inline-block;
+			color: #333;
+			font-family: Arial;
+			font-size: 14px;
+			line-height: 30px;
+			padding: 0 10px;
+			text-transform: uppercase;
+			text-decoration: none
+		}
+
+		.menu__links-item:hover {
+			text-decoration: underline
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(1) {
+			top: 18px;
+			width: 0%;
+			left: 50%
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(2) {
+			transform: rotate(45deg);
+			background: #fff
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(3) {
+			transform: rotate(-45deg);
+			background: #fff
+		}
+
+		.menu.menu_state_open .menu__icon span:nth-child(4) {
+			top: 18px;
+			width: 0%;
+			left: 50%
+		}
+
+		.menu.menu_state_open .menu__links {
+			display: block
+		}
+
+		@media screen and (max-width:999px) {
+			.menulog {
+				width: 100%;
+				max-width: 55px;
+				margin-left: 8px;
+				margin-top: 0;
+				display: block
+			}
+
+			.menu {
+				text-align: right;
+				padding-top: 10px;
+				padding-right: 15px;
+				display: flex;
+				justify-content: space-between;
+				align-items: center
+			}
+
+			.menu__icon {
+				display: inline-block;
+				z-index: 900
+			}
+
+			.menu__links {
+				position: fixed;
+				display: none;
+				top: 0;
+				right: 0;
+				left: 0;
+				height: 100%;
+				padding-top: 50px;
+				background-color: rgba(0, 0, 0, .9);
+				z-index: 100;
+				overflow: auto
+			}
+
+			.menu__links-item {
+				display: block;
+				padding: 10px 0;
+				text-align: center;
+				color: #fff;
+				font-size: 24px;
+				line-height: 45px
+			}
+
+			.menu__links-item-mob {
+				display: none
+			}
+		}
+	</style>
+	<script src="js/jquery.min.js"></script>
+	<script>(function ($) {
+			$(function () {
+				$('.menu__icon').on('click', function () {
+					$(this).closest('.menu').toggleClass('menu_state_open');
+				});
+			});
+		})(jQuery);</script>
+</head>
+
+
+
+
+
+<!-- partial -->
+
+
+
+<body>
+	<?php if (!empty($config)) include "./meldonium/include-body-start.php" ?>
+	<div class="wrap">
+		<style>
+			.colortext {
+				color: #fff
+			}
+		</style>
+		<section class="offer">
+			<div class="main-title"><span class="colortext">Набір посуду</span><br> 12 предметів</div>
+			<div class="sub-title">🎁 ПОДАРУНОК ШВАБРА ЛЕДАРКА</div>
+			<img class="offer_product" src="images/p1.jpg">
+			<br>
+			<br>
+			<br>
+			<div class="price">
+				<div class="old">
+					<p>Звичайна ціна:</p>
+					<div class="val"><span>2943</span><i>грн</i></div>
+				</div>
+				<div class="new">
+					<p>Ціна сьогодні:</p>
+					<div class="val"><span>2329</span><i>грн</i></div>
+				</div>
+			</div>
+
+			<ul class="bullet">
+				<li>
+					<div class="pic">
+						<img src="images/p7.jpeg" alt>
+					</div>
+					<p>ВИСОКОМІЦНА СТАЛЬ</p>
+				</li>
+				<li>
+					<div class="pic">
+						<img src="images/p6.jpeg" alt>
+					</div>
+					<p>12 ПРЕДМЕТІВ У НАБОРІ</p>
+				</li>
+				<li>
+					<div class="pic">
+						<img src="images/p8.jpeg" alt>
+					</div>
+					<p>БАГАТОШАРОВЕ ДНО</p>
+				</li>
+			</ul>
+
+			<div class="order_form pat">
+				<a href="#order_form" class="button-m">Замовити зі знижкою</a>
+			</div>
+		</section>
+
+
+
+		<section class="b4 pat">
+			<h2 class="title white"><span>Подарунок до набору</span>Швабра - Ледарка</h2>
+			<img src="images/present.jpg" alt class="image">
+			<ul class="char-list">
+				<li><b>Ємність відра:</b><span>7 л.</span></li>
+				<li><b>Автовіджим відра:</b><span>присутній</span></li>
+				<li><b>Довжина швабрі:</b><span>1.6 м.</span></li>
+				<li><b>Додаткові насадки:</b><span>2 шт.</span></li>
+				<li><b>Матеріал насадок:</b><span>мікрофібра</span></li>
+
+
+
+
+
+			</ul>
+
+
+
+		</section>
+
+		<section class="b1">
+
+			<h2 class="title black"><span>ВІДЕО ОГЛЯД</span>НЕРЖАВІЮЧОГО НАБОРА</h2>
+
+			<div class="video-block">
+				<iframe width="100%" height="315" src="https://www.youtube.com/embed/rctDdevWPGQ" frameborder="0"
+					allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</div>
+
+			<div class="alert"><b>Набір складається з 12 предметів</b>, виконаний з високоякісної <b>нержавіючої сталі</b>
+				з глянсовою блискучою поверхнею. <b>Ударопрочні кришки</b> виготовлені з термостійкого загартованого скла.
+				<b>Клепані ручки</b>, що не нагріваються. Завдяки <b>багатошаровому дну тепло</b> розподіляється по всій
+				площі основи, що забезпечує швидке нагрівання. Легко миється та чиститься. Не іржавіє і є екологічно чистим
+				посудом. Стильний дизайн та гарний вигляд.
+			</div>
+
+		</section>
+
+		<section class="b2 pat">
+			<h2 class="title white"><span>Переваги</span>НЕРЖАВІЮЧОГО НАБІРУ</h2>
+			<ul class="list-v2">
+				<li>
+					<div class="text">
+						<h3>Багатошарове, товсте дно!</h3>
+						<p>Дозволяє швидко нагріватися посуду, довго тримати тепло та виключає пригорання.</p>
+					</div>
+					<img src="images/m4.jpg">
+				</li>
+				<li>
+					<div class="text">
+						<h3>Якісний матеріал!</h3>
+						<p>При виробництві використовується нержавіюча сталь найвищого класу міцності AISI 304.</p>
+					</div>
+					<img src="images/m2.jpg">
+				</li>
+				<li>
+					<div class="text">
+						<h3>Надійні ручки!</h3>
+						<p>Виконані з AISI 304, не нагріваються, а також надійно прикріплені та не розхитуються.</p>
+					</div>
+					<img src="images/m3.jpg">
+				</li>
+				<li>
+					<div class="text">
+						<h3>Ударопрочні кришки!</h3>
+						<p>Виконані з товстого загартованого скла. На кришці є паровідвід. Ручка не нагрівається</p>
+					</div>
+					<img src="images/m1.jpg">
+				</li>
+			</ul>
+			<a href="#order_form" class="button-m">Замовити зі знижкою</a>
+		</section>
+
+		<section class="b3">
+			<h2 class="title"><span>Відмінності</span>Нержавіючого набору<span>від звичайного посуду</span></h2>
+
+			<ul class="benef2">
+
+				<li>
+					<p><span>Глибока сковорода</span>Їжа не пригорає і не прилипає до покриття завдяки внутрішньому
+						мармуровому антипригарному покриттю, що так само дозволяє Вам готувати без олії.</p>
+					<div class="img"><img src="images/p2.png" alt></div>
+				</li>
+				<li>
+					<div class="img"><img src="images/p6.jpeg" alt></div>
+					<p><span>Потрібні та зручні розміри посуду</span>У наборі каструлі від 2.1 л. до 6.5 л, також є
+						сковорода, що дозволяє готувати будь-які страви на будь-які порції.</p>
+				</li>
+				<li>
+					<p><span>Захист від корозії</span>Завдяки сталі найвищого класу AISI 304 посуд не іржавіє навіть якщо ви
+						його залишите мокрим на довгий час.</p>
+					<div class="img"><img src="images/p9.png" alt></div>
+				</li>
+
+
+
+
+			</ul>
+
+
+
+		</section>
+
+		<section class="b4 pat">
+			<h2 class="title white"><span>Характеристики</span>НЕРЖАВІЮЧОГО НАБОРУ<span>12 ПРЕДМЕТІВ</span></h2>
+			<img src="images/p4.jpeg" alt class="image">
+			<ul class="char-list">
+				<li><b>Каструля з кришкою:</b><span>6.5л. - діаметр 24см;</span></li>
+				<li><b>Каструля з кришкою:</b><span>&nbsp;&nbsp;&nbsp;4л. - діаметр 20см;</span></li>
+				<li><b>Каструля з кришкою:</b><span>&nbsp;&nbsp;&nbsp;3л. - діаметр 18см;</span></li>
+				<li><b>Каструля з кришкою:</b><span>2.1л - діаметр 16см;</span></li>
+				<li><b>&nbsp;&nbsp;&nbsp;Ковшик з кришкою:</b><span>2.1л - діаметр 16см;</span></li>
+				<li><b>Сковорода з кришкою:</b><span>5.5 см - діаметр 26см;</span></li>
+
+
+
+
+			</ul>
+
+
+			<div><a href="#order_form" class="button-m">Замовити зі знижкою</a></div>
+		</section>
+
+		<section class="slider">
+			<div class="slider__slider swiper">
+				<div class="slider__wrapper swiper-wrapper">
+					<div class="slider__slide swiper-slide">
+						<div class="reviews__box">
+							<div class="reviews__top">
+								<div class="reviews__foto">
+									<img src="images/ava1.jpg" alt="01">
+								</div>
+								<div class="reviews__date">
+									<div class="reviews__name">Ольга Поліщук </div>
+									<div class="reviews__city">м. Львів</div>
+								</div>
+							</div>
+							<div class="reviews__raiting">
+								<span>Оцінка покупця</span>
+								<div class="reviews__stars">
+									<img src="images/stars4.svg" alt="raiting">
+									<span>(4/5)</span>
+								</div>
+							</div>
+							<div class="reviews__image">
+								<img src="images/p4 jpeg.jpg" alt="img">
+							</div>
+							<div class="reviews__review">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit optio
+									ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider__slide swiper-slide">
+						<div class="reviews__box">
+							<div class="reviews__top">
+								<div class="reviews__foto">
+									<img src="images/ava1.jpg" alt="01">
+								</div>
+								<div class="reviews__date">
+									<div class="reviews__name">Ольга Поліщук </div>
+									<div class="reviews__city">м. Львів</div>
+								</div>
+							</div>
+							<div class="reviews__raiting">
+								<span>Оцінка покупця</span>
+								<div class="reviews__stars">
+									<img src="images/stars4.svg" alt="raiting">
+									<span>(4/5)</span>
+								</div>
+							</div>
+							<div class="reviews__image">
+								<img src="images/p4 jpeg.jpg" alt="img">
+							</div>
+							<div class="reviews__review">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit optio
+									ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider__slide swiper-slide">
+						<div class="reviews__box">
+							<div class="reviews__top">
+								<div class="reviews__foto">
+									<img src="images/ava1.jpg" alt="01">
+								</div>
+								<div class="reviews__date">
+									<div class="reviews__name">Ольга Поліщук </div>
+									<div class="reviews__city">м. Львів</div>
+								</div>
+							</div>
+							<div class="reviews__raiting">
+								<span>Оцінка покупця</span>
+								<div class="reviews__stars">
+									<img src="images/stars5.svg" alt="raiting">
+									<span>(5/5)</span>
+								</div>
+							</div>
+							<div class="reviews__image">
+								<img src="images/p4 jpeg.jpg" alt="img">
+							</div>
+							<div class="reviews__review">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit optio
+									ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+							</div>
+						</div>
+					</div>
+					<div class="slider__slide swiper-slide">
+						<div class="reviews__box">
+							<div class="reviews__top">
+								<div class="reviews__foto">
+									<img src="images/ava1.jpg" alt="01">
+								</div>
+								<div class="reviews__date">
+									<div class="reviews__name">Ольга Поліщук </div>
+									<div class="reviews__city">м. Львів</div>
+								</div>
+							</div>
+							<div class="reviews__raiting">
+								<span>Оцінка покупця</span>
+								<div class="reviews__stars">
+									<img src="images/stars5.svg" alt="raiting">
+									<span>(5/5)</span>
+								</div>
+							</div>
+							<div class="reviews__image">
+								<img src="images/p4 jpeg.jpg" alt="img">
+							</div>
+							<div class="reviews__review">
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit optio
+									ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button type="button" class="swiper-button-prev"></button>
+				<button type="button" class="swiper-button-next"></button>
+			</div>
+			<div class="swiper-pagination"></div>
+		</section>
+
+
+		<section class="order-info">
+			<h2 class="title"><span>Як замовити</span>НАБІР BENSON?</h2>
+			<ul class="order-list">
+				<li>
+					<div class="txt">
+						<h4>Крок 1:</h4>
+						<p>Заповніть форму замовлення</p>
+					</div>
+				</li>
+				<li>
+					<div class="txt">
+						<h4>Крок 2:</h4>
+						<p>Дочекайтесь дзвінка оператора</p>
+					</div>
+				</li>
+				<li>
+					<div class="txt">
+						<h4>Крок 3:</h4>
+						<p>Оплата при ориманні</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+
+		<section class="offer bottom">
+			<div class="main-title"><span class="colortext">Набір Посуду</span><br> 12 предметів</div>
+			<div class="sub-title">🎁 ПОДАРУНОК ШВАБРА ЛЕДАРКА</div>
+			<img class="offer_product" src="images/p1.jpg">
+
+			<br>
+			<br>
+			<br>
+			<div class="price">
+				<div class="old">
+					<p>Звичайна ціна:</p>
+					<div class="val"><span>2943</span><i>грн</i></div>
+				</div>
+				<div class="new">
+					<p>Ціна сьогодні:</p>
+					<div class="val"><span>2329</span><i>грн</i></div>
+				</div>
+			</div>
+
+			<div class="order_form pat">
+				<div class="form-txt">
+					<h4>Залишіть заявку</h4>
+					<p>та отримайте консультацію</p>
+				</div>
+
+				<form id="order_form" class="m1-form" action="thankyou.php" method="POST">
+					<input type="text" name="product" id="hiddenProduct" hidden value="Кухонні прилади Benson">
+					<input type="hidden" name="type" value="offer">
+					<input class="field" type="text" name="name" placeholder="Введіть Ваше ім'я" required>
+					<input class="field" type="tel" name="phone" placeholder="Введіть Ваш телефон" required>
+					<input class="url_link" type="hidden" name="url">
+					<input class="url_link" type="hidden" name="url">
+
+					<button class="button-m" type="submit">Придбати зараз</button>
+					<br>
+				</form>
+			</div>
+
+		</section>
+
+		<footer class="footer_section">
+
+			<center>
+				<div class="elementor-widget-wrap" style="
+                    color: #000;
+                    margin: 2em;
+    text-align: center;
+    display: block;">
+
+
+					м.Одеса, вул. Базова 17, офіс 129<br>
+					Графік роботи: Пн-Нд 9:00 - 20:00<br>
+					© 2017-2023<br>
+					<br>
+					<a href="politics.html" target="_blank" style="font-weight: 600;color: #000;">Політика
+						конфідеційності</a>
+				</div>
+
+
+			</center>
+		</footer>
+
+
+
+
+
+	</div>
+	<?php if (!empty($config)) include "./meldonium/include-body-end.php" ?>
+
+</body>
+
+</html>
