@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="ua">
+<!--Підключення Open Graph -->
+<!--<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml"> -->
+<!--<html prefix="og: https://ogp.me/ns#"> -->
+
+<head>
+	<title>Головна сторінка</title>
+	<meta charset="UTF-8">
+	<!-- Не обов'язковий мета-тег для ІЕ (Internet Explorer) та його версії (Edge (можливі також версії  ..., IE8, IE9, IE10, IE11)) -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20240529120857">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="ТУТ ВКАЗУЄМО КЛЮЧОВІ СЛОВА ДЛЯ ПОШУКОВИХ СИСТЕМ">
+	<meta name="description" content="ТУТ КОРОТКИЙ ОПИС-ПРИЗНАЧЕННЯ СТОРІНКИ">
+	<meta name="author" content="АВТОР">
+	<!-- Open Graph -->
+	<!-- <meta property="og:site_name" content="---" /> -->
+	<!--<meta property="og:description" content="---"> -->
+	<!--<meta property="og:title" content="---" /> -->
+	<!--<meta property="og:type" content="website" /> -->
+	<!--<meta property="og:image" content="img/1200_container.jpg" /> -->
+	<!-- <meta property="og:url" content="https://periodontist.com.ua/">  -->
+	<!--<meta property="og:image:secure_url" content="img/630_container.jpg" /> -->
+	<!--<meta property="og:image:type" content="image/jpg" /> -->
+	<!--<meta property="og:image:width" content="400" /> -->
+	<!--<meta property="og:image:height" content="300" /> -->
+	<!--<meta property="og:image:alt" content="container" /> -->
+	<!--<meta property="og:video" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:secure_url" content="https://www.youtube.com/watch?v=HaLZOla399I&ab_channel=UaPro" /> -->
+	<!--<meta property="og:video:type" content="application/x-shockwave-flash" /> -->
+	<!--<meta property="og:video:width" content="400" /> -->
+	<!--<meta property="og:video:height" content="300" /> -->
+</head>
+
+<body>
+	<div class="preloader">
+		<svg class="preloader__image" role="img" viewBox="0 0 512 512">
+			<path fill="currentColor" d="M304 48c0 26.51-21.49 48-48 48s-48-21.49-48-48 21.49-48 48-48 48 21.49 48 48zm-48 368c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm208-208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zM96 256c0-26.51-21.49-48-48-48S0 229.49 0 256s21.49 48 48 48 48-21.49 48-48zm12.922 99.078c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.491-48-48-48zm294.156 0c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48c0-26.509-21.49-48-48-48zM108.922 60.922c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.491-48-48-48z">
+			</path>
+		</svg>
+	</div>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<div class="header__countdown">
+					<p>До кінця акції залишилося: </p>
+					<div class="header__counters">
+						<span id="hours">6</span> :
+						<span id="minutes">00</span> :
+						<span id="seconds">00</span>
+					</div>
+				</div>
+			</div>
+			<div class='header__menu menu'>
+				<nav class='menu__body'>
+					<ul class='menu__list'>
+						<li class='menu__item'><a href='#' class='menu__link' data-goto-header data-goto=".hero">Про товар</a>
+						<li class='menu__item'><a href='#' class='menu__link' data-goto-header data-goto=".advantages">Переваги</a>
+						</li>
+						<li class='menu__item'><a href='#' class='menu__link' data-goto-header data-goto=".characteristics">Характеристики</a></li>
+						<li class='menu__item'><a href='#' class='menu__link' data-goto-header data-goto=".slider">Відгуки</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="page__hero hero">
+				<div class="hero__container">
+					<h1>Система безпечного маневрування</h1>
+					<div class="hero__img">
+						<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.webp" alt="product"></picture>
+					</div>
+					<div class="hero__price">
+						<div class="hero__old">
+							<p>Звичайна ціна:</p>
+							<span>123 $</span>
+						</div>
+						<div class="hero__new">
+							<p>Нова ціна:</p>
+							<span>123 $</span>
+						</div>
+					</div>
+				</div>
+				<div class="hero__contacts">
+					<h3>Приєднуйся, та дізнавайся першим про новинки та акції!</h3>
+					<div class="hero__contact">
+						<a href="https://t.me/some-link" class="hero__contact--tg _icon-tg">Telegram</a>
+						<a href="viber://chat?number=%2B380999999999" class="hero__contact--viber _icon-viber">Viber</a>
+					</div>
+				</div>
+				<div class="page__button">
+					<div class="page__container">
+						<button class="button" data-goto-header data-goto=".page__form">Замовити зі знижкою</button>
+					</div>
+				</div>
+				<div class="hero__container advantages">
+					<h2>Чому Вам це потрібно?</h2>
+					<div class="hero__text">
+						<p>Ознайомтеся з функціями та переконайтесь самі!</p>
+					</div>
+					<div class="hero__functions">
+						<div class="hero__function">
+							<article class="hero__left">
+								<h3>Універсальний</h3>
+								<p>Тип виробу дозволяє використовувати його на будь-якому транспортному засобі, роблячи
+									абсолютно універсальним пристроєм!</p>
+							</article>
+							<article class="hero__right">
+								<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.webp" alt="universal"></picture>
+							</article>
+						</div>
+						<div class="hero__function">
+							<article class="hero__left">
+								<h3>Кут огляду</h3>
+								<p>Завдяки куту огляду 90°-120° "мертвих зон" не залишиться!</p>
+							</article>
+							<article class="hero__right">
+								<picture><source srcset="img/06.webp" type="image/webp"><img src="img/06.png" alt="universal"></picture>
+							</article>
+						</div>
+						<div class="hero__function">
+							<article class="hero__left">
+								<h3>Нічний вид</h3>
+								<p>Вбудована функція нічного бачення дозволяє почувати себе впевнено в будь-який час доби!</p>
+							</article>
+							<article class="hero__right">
+								<picture><source srcset="img/night-vision-effect-1.webp" type="image/webp"><img src="img/night-vision-effect-1.jpg" alt="night vision effect"></picture>
+							</article>
+						</div>
+						<div class="hero__function">
+							<article class="hero__left">
+								<h3>Рух заднім ходом</h3>
+								<p>Рух задниім ходом та паркування стане в пригоді навіть досвідченому водію!</p>
+							</article>
+							<article class="hero__right">
+								<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.webp" alt="universal"></picture>
+							</article>
+						</div>
+					</div>
+				</div>
+			</section>
+			<div class="page__button">
+				<div class="page__container">
+					<button class="button" data-goto-header data-goto=".page__form">Замовити зі знижкою</button>
+				</div>
+			</div>
+			<div class="page__video video">
+				<div class="video__container">
+					<video src="img/video.mp4" muted loop controls autoplay></video>
+				</div>
+			</div>
+			<div class="page__characteristics characteristics">
+				<h2>Основні характиристики системи</h2>
+				<p> Потужність
+					<span>3,5 Вт</span>
+				</p>
+				<p> Напруга
+					<span>9В-30В</span>
+				</p>
+				<p> Матеріал
+					<span>АБС+Метал</span>
+				</p>
+				<p> Діапазон виявлення
+					<span>4*40м</span>
+				</p>
+				<p> Розширення камери
+					<span>1280*1080</span>
+				</p>
+				<p> Розмір екрану
+					<span>7 дюймів</span>
+				</p>
+			</div>
+			<div class="slider">
+				<div class="slider__container">
+					<h2>Відгуки покупців</h2>
+					<div class="slider__slider swiper">
+						<div class="slider__wrapper swiper-wrapper">
+							<div class="slider__slide swiper-slide">
+								<div class="reviews__box">
+									<div class="reviews__top">
+										<div class="reviews__foto">
+											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+										</div>
+										<div class="reviews__date">
+											<div class="reviews__name">Ольга Поліщук </div>
+											<div class="reviews__city">м. Львів</div>
+										</div>
+									</div>
+									<div class="reviews__raiting">
+										<span>Оцінка покупця</span>
+										<div class="reviews__stars">
+											<img src="img/stars4.svg" alt="raiting">
+											<span>(4/5)</span>
+										</div>
+									</div>
+									<div class="reviews__image">
+										<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.webp" alt="img"></picture>
+									</div>
+									<div class="reviews__review">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
+											optio
+											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider__slide swiper-slide">
+								<div class="reviews__box">
+									<div class="reviews__top">
+										<div class="reviews__foto">
+											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+										</div>
+										<div class="reviews__date">
+											<div class="reviews__name">Ольга Поліщук </div>
+											<div class="reviews__city">м. Львів</div>
+										</div>
+									</div>
+									<div class="reviews__raiting">
+										<span>Оцінка покупця</span>
+										<div class="reviews__stars">
+											<img src="img/stars4.svg" alt="raiting">
+											<span>(4/5)</span>
+										</div>
+									</div>
+									<div class="reviews__image">
+										<picture><source srcset="img/05.webp" type="image/webp"><img src="img/05.webp" alt="img"></picture>
+									</div>
+									<div class="reviews__review">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
+											optio
+											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider__slide swiper-slide">
+								<div class="reviews__box">
+									<div class="reviews__top">
+										<div class="reviews__foto">
+											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+										</div>
+										<div class="reviews__date">
+											<div class="reviews__name">Ольга Поліщук </div>
+											<div class="reviews__city">м. Львів</div>
+										</div>
+									</div>
+									<div class="reviews__raiting">
+										<span>Оцінка покупця</span>
+										<div class="reviews__stars">
+											<img src="img/stars5.svg" alt="raiting">
+											<span>(5/5)</span>
+										</div>
+									</div>
+									<div class="reviews__image">
+										<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.webp" alt="img"></picture>
+									</div>
+									<div class="reviews__review">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
+											optio
+											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+									</div>
+								</div>
+							</div>
+							<div class="slider__slide swiper-slide">
+								<div class="reviews__box">
+									<div class="reviews__top">
+										<div class="reviews__foto">
+											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+										</div>
+										<div class="reviews__date">
+											<div class="reviews__name">Ольга Поліщук </div>
+											<div class="reviews__city">м. Львів</div>
+										</div>
+									</div>
+									<div class="reviews__raiting">
+										<span>Оцінка покупця</span>
+										<div class="reviews__stars">
+											<img src="img/stars5.svg" alt="raiting">
+											<span>(5/5)</span>
+										</div>
+									</div>
+									<div class="reviews__image">
+										<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.webp" alt="img"></picture>
+									</div>
+									<div class="reviews__review">
+										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
+											optio
+											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<button type="button" class="swiper-button-prev"></button>
+						<button type="button" class="swiper-button-next"></button>
+					</div>
+					<div class="swiper-pagination"></div>
+				</div>
+			</div>
+			<div class="page__how how">
+				<div class="how__container">
+					<h2>ЯК ЗАМОВИТИ СИСТЕМУ?</h2>
+					<div class="how__items">
+						<div class="how__item">
+							<div class="how__left">
+								<picture><source srcset="img/order-icon1.webp" type="image/webp"><img src="img/order-icon1.png" alt="order"></picture>
+							</div>
+							<div class="how__right">
+								<span>Крок 1:</span>
+								<p>Заповніть форму замовлення</p>
+							</div>
+						</div>
+						<div class="how__item">
+							<div class="how__left">
+								<picture><source srcset="img/order-icon2.webp" type="image/webp"><img src="img/order-icon2.png" alt="order"></picture>
+							</div>
+							<div class="how__right">
+								<span>Крок 2:</span>
+								<p>Дочекайтесь дзвінка оператора</p>
+							</div>
+						</div>
+						<div class="how__item">
+							<div class="how__left">
+								<picture><source srcset="img/order-icon3.webp" type="image/webp"><img src="img/order-icon3.png" alt="order"></picture>
+							</div>
+							<div class="how__right">
+								<span>Крок 3:</span>
+								<p>Сплатіть товар після отримання</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="page__delivery delivery">
+				<div class="delivery__container">
+					<div class="delivery__del">
+						<h2>доставка</h2>
+						<div class="delivery__img">
+							<picture><source srcset="img/nova-poshta.webp" type="image/webp"><img src="img/nova-poshta.png" alt="nova poshta"></picture>
+							<picture><source srcset="img/Ukrposhta.webp" type="image/webp"><img src="img/Ukrposhta.png" alt="Ukrposhta"></picture>
+						</div>
+					</div>
+					<div class="delivery__cash">
+						<h2>Оплата</h2>
+						<div class="delivery__content">
+							<picture><source srcset="img/top_l_21.webp" type="image/webp"><img src="img/top_l_21.jpg" alt="delivery"></picture>
+							<div class="delivery__text">
+								<p>готівкою на пошті, <span>без жодних переплат</span></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="hero__container">
+				<h1>Система безпечного маневрування</h1>
+				<div class="hero__img">
+					<picture><source srcset="img/05.webp" type="image/webp"><img src="img/05.webp" alt="product"></picture>
+				</div>
+				<div class="hero__price">
+					<div class="hero__old">
+						<p>Звичайна ціна:</p>
+						<span>123 $</span>
+					</div>
+					<div class="hero__new">
+						<p>Нова ціна:</p>
+						<span>123 $</span>
+					</div>
+				</div>
+			</div>
+			<div class="page__form">
+				<div class="form__container">
+					<form action="files/sendmail/sendmail.php" data-dev enctype="multipart/form-data" class="form" method="POST">
+						<input type="hidden" name="form_subject" value="Тема листа">
+						<h2>Встигніть замовити!</h2>
+						<label class="form-label">
+							<input type="text" data-required name="name" id="name" autocomplete="off" maxlength="255" data-error="Error" placeholder="Ім'я" class="input">
+						</label>
+						<label class="form-label">
+							<input type="text" data-required name="tel" id="tel" autocomplete="off" maxlength="255" data-error="Error" placeholder="Телефон" class="input">
+						</label>
+						<button type="submit" class="button button--small">Замовити</button>
+					</form>
+				</div>
+			</div>
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<p>м.Запоріжжя, вул. ФФФФФФФФ 17</p>
+				<p>Графік роботи: Пн-Нд 9:00 - 20:00</p>
+				<p>© 2017-2024</p>
+				<a href="#" target="_blank">Політика конфіденційності</a>
+			</div>
+		</footer>
+	</div>
+	<!-- <div id="popup" aria-hidden="true" class="popup">
+	<div class="popup__wrapper">
+		<div class="popup__content">
+			<button data-close type="button" class="popup__close">Закрыть</button>
+			<div class="popup__text">
+				Text
+			</div>
+		</div>
+	</div>
+</div> -->
+	<script src="js/app.min.js?_v=20240529120857"></script>
+</body>
+
+</html>
