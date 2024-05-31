@@ -246,10 +246,6 @@ body {
 }
 
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 100;
 }
 
@@ -274,44 +270,19 @@ body {
   gap: 1.25rem;
 }
 
-.header__countdown {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 100%;
-  gap: 1.25rem;
-  font-weight: 700;
-  color: #ffffff;
+.header._header-scroll {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
-.header__countdown p {
-  font-size: 1.5rem;
-  text-align: center;
-}
-
-.header__countdown span {
-  font-size: 2.5rem;
-}
-
-.header__counters {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.3125rem;
-  width: 9.375rem;
-}
-
-.menu {
-  width: 100%;
+.header._header-show {
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .menu__body {
@@ -358,11 +329,18 @@ body {
   padding-bottom: 1.875rem;
   text-align: center;
   font-weight: 400;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
 }
 
 .footer__container p {
   color: #ffffff;
-  margin-bottom: 0.625rem;
 }
 
 .footer__container a {
@@ -370,11 +348,114 @@ body {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   display: inline-block;
-  margin-top: 1.25rem;
 }
 
-.hero {
-  padding-top: 8.4375rem;
+.count__container {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  background-color: #51657e;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
+}
+
+.count__container--bottom {
+  background-color: rgba(81, 101, 126, 0.8784313725);
+}
+
+.count__countdown {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  gap: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.count__countdown p {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.count__countdown span {
+  font-size: 2.5rem;
+}
+
+.count__counters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.3125rem;
+  width: 9.375rem;
+}
+
+.count__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 1.25rem;
+}
+
+.count__content a > img,
+.count__content a > picture {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.count__content a picture source,
+.count__content a picture img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.count__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-align: right;
+  gap: 0.625rem;
+}
+
+.count__info p {
+  white-space: nowrap;
+  color: #ffffff;
+}
+
+.count__info a {
+  white-space: nowrap;
+  color: #ffffff;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
 }
 
 .hero__container {
@@ -2287,8 +2368,30 @@ button.swiper-pagination-bullet {
     font-size: 1.25rem;
   }
 
+  .footer__container p.count__date {
+    font-size: 1rem;
+  }
+
   .footer__container a {
     font-size: 1.125rem;
+  }
+
+  .count__content a > img,
+  .count__content a > picture {
+    max-width: 5rem;
+  }
+
+  .count__content a picture source,
+  .count__content a picture img {
+    max-width: 5rem;
+  }
+
+  .count__info p {
+    font-size: 1.25rem;
+  }
+
+  .count__info a {
+    font-size: 1.25rem;
   }
 
   .hero__container h1 {
@@ -2402,15 +2505,11 @@ button.swiper-pagination-bullet {
 }
 
 @media (max-width: 30em) {
-  .header__countdown {
+  .count__countdown {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-  }
-
-  .hero {
-    padding-top: 11.25rem;
   }
 }
 
@@ -2427,7 +2526,29 @@ button.swiper-pagination-bullet {
     font-size: 1rem;
   }
 
+  .footer__container p.count__date {
+    font-size: 0.875rem;
+  }
+
   .footer__container a {
+    font-size: 1rem;
+  }
+
+  .count__content a > img,
+  .count__content a > picture {
+    max-width: 3.75rem;
+  }
+
+  .count__content a picture source,
+  .count__content a picture img {
+    max-width: 3.75rem;
+  }
+
+  .count__info p {
+    font-size: 1rem;
+  }
+
+  .count__info a {
     font-size: 1rem;
   }
 
@@ -2563,12 +2684,6 @@ button.swiper-pagination-bullet {
   }
 }
 
-@media (max-width: 26.25em) {
-  .hero {
-    padding-top: 14.375rem;
-  }
-}
-
 @media (min-width: 20em) and (max-width: 37.5em) {
 @supports (padding-top: clamp( 0.625rem , -0.0892857143rem  +  3.5714285714vw , 1.25rem )) {
     .menu__link {
@@ -2606,6 +2721,18 @@ button.swiper-pagination-bullet {
     }
 }
 
+@supports (font-size: clamp( 0.875rem , 0.7321428571rem  +  0.7142857143vw , 1rem )) {
+    .footer__container p.count__date {
+      font-size: clamp( 0.875rem , 0.7321428571rem  +  0.7142857143vw , 1rem );
+    }
+}
+
+@supports not (font-size: clamp( 0.875rem , 0.7321428571rem  +  0.7142857143vw , 1rem )) {
+    .footer__container p.count__date {
+      font-size: calc(0.875rem + 0.125 * (100vw - 20rem) / 17.5);
+    }
+}
+
 @supports (font-size: clamp( 1rem , 0.8571428571rem  +  0.7142857143vw , 1.125rem )) {
     .footer__container a {
       font-size: clamp( 1rem , 0.8571428571rem  +  0.7142857143vw , 1.125rem );
@@ -2615,6 +2742,58 @@ button.swiper-pagination-bullet {
 @supports not (font-size: clamp( 1rem , 0.8571428571rem  +  0.7142857143vw , 1.125rem )) {
     .footer__container a {
       font-size: calc(1rem + 0.125 * (100vw - 20rem) / 17.5);
+    }
+}
+
+@supports (max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem )) {
+    .count__content a > img,
+    .count__content a > picture {
+      max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem );
+    }
+}
+
+@supports not (max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem )) {
+    .count__content a > img,
+    .count__content a > picture {
+      max-width: calc(3.75rem + 1.25 * (100vw - 20rem) / 17.5);
+    }
+}
+
+@supports (max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem )) {
+    .count__content a picture source,
+    .count__content a picture img {
+      max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem );
+    }
+}
+
+@supports not (max-width: clamp( 3.75rem , 2.3214285714rem  +  7.1428571429vw , 5rem )) {
+    .count__content a picture source,
+    .count__content a picture img {
+      max-width: calc(3.75rem + 1.25 * (100vw - 20rem) / 17.5);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem )) {
+    .count__info p {
+      font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem )) {
+    .count__info p {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 17.5);
+    }
+}
+
+@supports (font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem )) {
+    .count__info a {
+      font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem );
+    }
+}
+
+@supports not (font-size: clamp( 1rem , 0.7142857143rem  +  1.4285714286vw , 1.25rem )) {
+    .count__info a {
+      font-size: calc(1rem + 0.25 * (100vw - 20rem) / 17.5);
     }
 }
 
@@ -2953,6 +3132,12 @@ button.swiper-pagination-bullet {
   }
 
   .footer__container a:hover {
+    text-decoration: underline;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+  }
+
+  .count__info a:hover {
     text-decoration: underline;
     -webkit-transition: all 0.3s ease 0s;
     transition: all 0.3s ease 0s;

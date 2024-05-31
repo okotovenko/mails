@@ -11,7 +11,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20240529124637">
+	<link rel="stylesheet" href="css/style.min.css?_v=20240531155122">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<!-- Кодування сторінки: ширина області перегляду така ж, як і ширина екрану; зум за замовчуванням 100%; заборона масштабувати контент користувачу -->
@@ -46,17 +46,29 @@
 		</svg>
 	</div>
 	<div class="wrapper">
-		<header class="header">
-			<div class="header__container">
-				<div class="header__countdown">
+		<div class="count">
+			<div class="count__container">
+				<div class="count__countdown">
 					<p>До кінця акції залишилося: </p>
-					<div class="header__counters">
+					<div class="count__counters">
 						<span id="hours">6</span> :
 						<span id="minutes">00</span> :
 						<span id="seconds">00</span>
 					</div>
 				</div>
 			</div>
+			<div class="count__container count__container--bottom">
+				<div class="count__content">
+					<a href='#'><img src='img/logo_2.png' alt='logo'></a>
+					<div class="count__info">
+						<p>м. Київ, пр. Визволителів, 17</p>
+						<a class="count__mail" href="mailto:sales@monitoring-gps.com.ua">sales@monitoring-gps.com.ua</a>
+						<a class="count__phone" href="tel:+380931701210">+380931701210</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="header">
 			<div class='header__menu menu'>
 				<nav class='menu__body'>
 					<ul class='menu__list'>
@@ -186,27 +198,27 @@
 								<div class="reviews__box">
 									<div class="reviews__top">
 										<div class="reviews__foto">
-											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+											<picture><source srcset="img/avatar1.webp" type="image/webp"><img src="img/avatar1.jpg" alt="Віталій Поліщук"></picture>
 										</div>
 										<div class="reviews__date">
-											<div class="reviews__name">Ольга Поліщук </div>
+											<div class="reviews__name">Віталій Поліщук</div>
 											<div class="reviews__city">м. Львів</div>
 										</div>
 									</div>
 									<div class="reviews__raiting">
 										<span>Оцінка покупця</span>
 										<div class="reviews__stars">
-											<img src="img/stars4.svg" alt="raiting">
-											<span>(4/5)</span>
+											<img src="img/stars5.svg" alt="raiting">
+											<span>(5/5)</span>
 										</div>
 									</div>
 									<div class="reviews__image">
-										<picture><source srcset="img/01.webp" type="image/webp"><img src="img/01.webp" alt="img"></picture>
+										<picture><source srcset="img/review.webp" type="image/webp"><img src="img/review.jpg" alt="img"></picture>
 									</div>
 									<div class="reviews__review">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
-											optio
-											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+										<p>Дуже корисна річ, особливо коли потрібно їхати у складних умовах, наприклад при
+											задимленості. Система має не тільки нічне бачення, а й чітко передає відстань до
+											об'єктів. Найкраще рішення для використання, щоб рятувати життя. Рекомендую!</p>
 									</div>
 								</div>
 							</div>
@@ -214,27 +226,29 @@
 								<div class="reviews__box">
 									<div class="reviews__top">
 										<div class="reviews__foto">
-											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+											<picture><source srcset="img/avatar2.webp" type="image/webp"><img src="img/avatar2.jpg" alt="Дмитро Сиченко"></picture>
 										</div>
 										<div class="reviews__date">
-											<div class="reviews__name">Ольга Поліщук </div>
-											<div class="reviews__city">м. Львів</div>
+											<div class="reviews__name">Дмитро Сиченко</div>
+											<div class="reviews__city">м. Дніпро</div>
 										</div>
 									</div>
 									<div class="reviews__raiting">
 										<span>Оцінка покупця</span>
 										<div class="reviews__stars">
-											<img src="img/stars4.svg" alt="raiting">
-											<span>(4/5)</span>
+											<img src="img/stars5.svg" alt="raiting">
+											<span>(5/5)</span>
 										</div>
 									</div>
 									<div class="reviews__image">
 										<picture><source srcset="img/05.webp" type="image/webp"><img src="img/05.webp" alt="img"></picture>
 									</div>
 									<div class="reviews__review">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
-											optio
-											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+										<p>Незамінний інструмент для мого бізнесу! Встановив відеопарктронік на фронтальний
+											навантажувач, і це значно спростило виконання робочих завдань на будмайданчику. У
+											спецтехніки є сліпі зони, а гул та різні шуми настільки потужні, що орієнтуватись
+											доволі складно! Тепер я можу уникнути непередбачених ситуацій. Дуже задоволений
+											результатом!</p>
 									</div>
 								</div>
 							</div>
@@ -242,11 +256,11 @@
 								<div class="reviews__box">
 									<div class="reviews__top">
 										<div class="reviews__foto">
-											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+											<picture><source srcset="img/avatar3.webp" type="image/webp"><img src="img/avatar3.jpg" alt="Іван Цивільов"></picture>
 										</div>
 										<div class="reviews__date">
-											<div class="reviews__name">Ольга Поліщук </div>
-											<div class="reviews__city">м. Львів</div>
+											<div class="reviews__name">Іван Цивільов</div>
+											<div class="reviews__city">м. Одеса</div>
 										</div>
 									</div>
 									<div class="reviews__raiting">
@@ -260,9 +274,10 @@
 										<picture><source srcset="img/02.webp" type="image/webp"><img src="img/02.webp" alt="img"></picture>
 									</div>
 									<div class="reviews__review">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
-											optio
-											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+										<p>Система, яка рятує життя! Після встановлення системи безпечного зближення на наші
+											кар’єрні самоскиди, робота пришвидшилась! Це дає додаткове відчуття безпеки та
+											впевненості як для мене, так і для моїх працівників. Велике спасибі розробникам за таке
+											інноваційне рішення!</p>
 									</div>
 								</div>
 							</div>
@@ -270,11 +285,11 @@
 								<div class="reviews__box">
 									<div class="reviews__top">
 										<div class="reviews__foto">
-											<picture><source srcset="img/ava1.webp" type="image/webp"><img src="img/ava1.jpg" alt="01"></picture>
+											<picture><source srcset="img/avatar4.webp" type="image/webp"><img src="img/avatar4.jpg" alt="Олександр Марков"></picture>
 										</div>
 										<div class="reviews__date">
-											<div class="reviews__name">Ольга Поліщук </div>
-											<div class="reviews__city">м. Львів</div>
+											<div class="reviews__name">Олександр Марков</div>
+											<div class="reviews__city">м. Київ</div>
 										</div>
 									</div>
 									<div class="reviews__raiting">
@@ -288,9 +303,11 @@
 										<picture><source srcset="img/03.webp" type="image/webp"><img src="img/03.webp" alt="img"></picture>
 									</div>
 									<div class="reviews__review">
-										<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus error velit
-											optio
-											ipsam blanditiis labore eligendi cupiditate! Corporis, labore consequatur!</p>
+										<p>Ідеальне рішення для маневрування у терміналі! Користуюся системою вже кілька місяців і
+											не можу натішитися її функціональністю. Особливо оцінюю її під час їзди та маневрування
+											у вузьких просторах. Хочу зазначити, що система видає звукові застереження та сама
+											визначає відстань. Дуже рекомендую всім водіям, хто цінує комфорт і безпеку на дорозі!
+										</p>
 									</div>
 								</div>
 							</div>
@@ -389,14 +406,19 @@
 		</main>
 		<footer class="footer">
 			<div class="footer__container">
-				<p>м.Запоріжжя, вул. ФФФФФФФФ 17</p>
-				<p>Графік роботи: Пн-Нд 9:00 - 20:00</p>
-				<p>© 2017-2024</p>
+				<div class="count__content">
+					<a href='#'><img src='img/logo_2.png' alt='logo'></a>
+					<div class="count__info">
+						<p>м. Київ, пр. Визволителів, 17</p>
+						<p>Графік роботи: Пн-Нд 9:00 - 20:00</p>
+						<p class="count__date">© 2017-2024</p>
+					</div>
+				</div>
 				<a href="#" target="_blank">Політика конфіденційності</a>
 			</div>
 		</footer>
 	</div>
-	<script src="js/app.min.js?_v=20240529124637"></script>
+	<script src="js/app.min.js?_v=20240531155122"></script>
 </body>
 
 </html>
